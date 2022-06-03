@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.pageMain{
+    background-image: url("../assets/17.png");
+    background-size: cover;
+
+}
+.mainInnerwrapper{
+    min-height: 100vh;
+    width:80%;
+    color:whitesmoke;
+    margin: 0px, auto ;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 0 auto; */
+}
+.maintop{
+    font-size: 14px;
+}
+.topsentence{
+    font-weight: 300;
+    width: 60%;
+    min-width: 300px;
+}
+.topauthor{
+    font-weight: 700;
+}
+.mainbottom >h1{
+    font-size: 110px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.mainbottom >h1 > span{
+    font-size: 30px;
+    font-weight: 300;
+}
+.mainbottom >h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400 ;
+}
