@@ -4,6 +4,8 @@
         require_once "../API/ShowWheater.php";
         require_once "../helpers/temp_conv.php";
         require_once "../database/pageinfo.php";
+        require_once "../helpers/location.php";
+
 ?>
 <main class="Pagemain">
     <div class="MainInnerwrapper">
@@ -18,12 +20,16 @@
 
 ?>
     <div class="info">
-        <h2>Informacje o pogodzie w mieście:</h2>
-        <h1><?php echo $weatherDecode['name']?></h1><br>
-        <h3><?php echo Tempconvert(round($temp))?></h3><br>
-        <h3><?php echo $weatherDecode['main']['humidity']."&nbsp%"?></h3><br>
-        <h3><?php echo $weatherDecode['main']['pressure']."&nbsphPa"?></h3><br>
-        <h3><?php echo $weatherDecode['weather']['0']['description']."<img src='".$icon."'>"?></h3>
+        <div class="card" style="width: 35rem;">
+            <div class="card-header"><h2>Informacje o pogodzie w mieście:</h2></div>
+            <div class="card-header"><h1><?php echo $weatherDecode['name']?></h1></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><h3><?php echo Tempconvert(round($temp))?></h3></li>
+                    <li class="list-group-item"> <h3><?php echo $weatherDecode['main']['humidity']."&nbsp%"?></h3></li>
+                    <li class="list-group-item"><h3><?php echo $weatherDecode['main']['pressure']."&nbsphPa"?></h3></li>
+                    <li class="list-group-item"><h3><?php echo $weatherDecode['weather']['0']['description']."<img src='".$icon."'>"?></h3></li>
+                </ul>
+            </div>
     </div>
 <?php    
     }
@@ -35,5 +41,9 @@
 <?php
     }
     ?>
+<div class="mainBottom">
+            <p><div id="day"></div> it's Currently</p>
+           <div id="zegar"></div> 
+            <h3><?php echo getLocation(); ?></h3>
     <button class="back"><a href="HomeView.php">Go Back</a></button>
     </div>

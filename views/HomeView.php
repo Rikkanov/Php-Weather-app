@@ -13,12 +13,12 @@
             <p class="Topauthor"><?php echo $pageInfo['homeInfo']['author']; ?></p>
         </div>
         <div class="mainBottom">
-            <p><div id="day" onLoad="daytime()"></div>it's Currently</p>
-            <h1><div id="zegar"></div><span>CEST</span></h1>
+           <div id="day"></div> it's Currently
+           <div id="zegar"></div> 
             <h3><?php echo getLocation(); ?></h3>
         <form action="CityView.php" method="GET">
                 <input type="text" name="city">
-                <input value="Search city" type="submit" name="citySubmit">
+                <input class="btn btn-primary btn-sm" value="Search city" type="submit" name="citySubmit">
         </form>
     </div>
 </div>

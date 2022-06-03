@@ -16,7 +16,7 @@
             var miesiace = new Array("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
             
             var pokazDate = godzina + ':' + minuta + ':' + sekunda;
-            document.getElementById("zegar").innerHTML = pokazDate;
-           
+            document.getElementById("zegar").innerHTML = " <h1>" + pokazDate + "<span>CEST</span></h1>";
+           //  document.querySelector("h1").innerText;
             setTimeout(zegarek, 1000);         
         }        

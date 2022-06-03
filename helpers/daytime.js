@@ -1,9 +1,9 @@
-
+var dt;
 function daytime ()
 {
     var st = new Date();
 var t = st.getHours();
-var dt;
+
 if (t>= 6 && t<12){
         dt = "Good Morning" ;
 }
@@ -16,5 +16,6 @@ else if(t>= 20 && t<6){
 else{
     dt ="ERR";
 }
-document.getElementById("day").innerHTML = dt;
+document.getElementById("day").innerHTML ="" + dt +"";
+// document.querySelector("h1").innerText;
 }
