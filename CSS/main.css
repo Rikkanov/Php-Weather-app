@@ -10,12 +10,12 @@ body{
 a{
     text-decoration: none;
 }
-.pageMain{
+.PageMain{
     background-image: url("../assets/17.png");
     background-size: cover;
 
 }
-.mainInnerwrapper{
+.MainInnerwrapper{
     min-height: 100vh;
     width:80%;
     color:whitesmoke;
@@ -26,28 +26,37 @@ a{
     justify-content: space-between;
     /* margin: 0 auto; */
 }
-.maintop{
+.mainTop{
     font-size: 14px;
 }
-.topsentence{
+.Topsentence{
     font-weight: 300;
     width: 60%;
     min-width: 300px;
 }
-.topauthor{
+.Topauthor{
     font-weight: 700;
 }
-.mainbottom >h1{
+.mainBottom >h1{
     font-size: 110px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
+    display:flex;
+    flex-direction:row ;
 }
-.mainbottom >h1 > span{
+#day{
+    font-size: 30px;
+}
+#zegar{
+    font-size: 70px;
+}
+.mainBottom >h1 > span{
     font-size: 30px;
     font-weight: 300;
+
 }
-.mainbottom >h3{
+.mainBottom >h3{
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 400 ;

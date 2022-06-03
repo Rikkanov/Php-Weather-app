@@ -13,8 +13,8 @@
             <p class="Topauthor"><?php echo $pageInfo['homeInfo']['author']; ?></p>
         </div>
         <div class="mainBottom">
-            <p><?php echo daytime(); ?> it's Currently</p>
-            <h1><?php echo date("H:m"); ?> <span>CEST</span></h1>
+            <p><div id="day" onLoad="daytime()"></div>it's Currently</p>
+            <h1><div id="zegar"></div><span>CEST</span></h1>
             <h3><?php echo getLocation(); ?></h3>
         <form action="CityView.php" method="GET">
                 <input type="text" name="city">

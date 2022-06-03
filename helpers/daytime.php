@@ -11,7 +11,7 @@ function daytime () {
             return "Good Evening";
         }
         else{
-            return "JA JA GUTE IDEE";
+            return "ERR";
         }
         return $hour;
 }
