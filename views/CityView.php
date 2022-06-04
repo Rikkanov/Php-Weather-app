@@ -20,8 +20,8 @@
 
 ?>
     <div class="info">
-        <div class="card" style="width: 35rem;">
-            <div class="card-header"><h2>Informacje o pogodzie w mieście:</h2></div>
+        <div class="card" style="width: 25rem;">
+            <div class="card-header"><h2>Karta Pogodowa Miasta:</h2></div>
             <div class="card-header"><h1><?php echo $weatherDecode['name']?></h1></div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><h3><?php echo Tempconvert(round($temp))?></h3></li>
@@ -45,5 +45,10 @@
             <p><div id="day"></div> it's Currently</p>
            <div id="zegar"></div> 
             <h3><?php echo getLocation(); ?></h3>
-    <button class="back"><a href="HomeView.php">Go Back</a></button>
+                <form action="HomeView.php">
+                <div class="d-grid gap-1 col-2">
+                    <input type="submit" class="btn-primary btn-lg" value="Go Back">
+                </div>
+                </form>
+   
     </div>
