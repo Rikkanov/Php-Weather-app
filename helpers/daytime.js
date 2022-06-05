@@ -10,8 +10,11 @@ if (t>= 6 && t<12){
 else if(t>= 12 && t<20){
         dt = "Good Afternoon" ;
 }  
-else if(t>= 20 && t<6){
+else if(t>= 20 && t<24){
        dt = "Good Evening" ;
+}
+else if(t<24 && t<6){
+    dt = "Good Evening" ;
 }
 else{
     dt ="ERR";

@@ -1,0 +1,57 @@
+.PageMain{
+    background-image: url("../assets/1.jpg") !important;
+    background-size: cover !important;
+}
+.MainInnerwrapper{
+    min-height: 100vh !important;
+    width:80%;
+    margin: 0px, auto ;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 0 auto; */
+}
+.mainTop{
+    font-size: 14px !important;
+}
+.Topsentence{
+    font-weight: 300;
+    width: 60%;
+    min-width: 300px;
+}
+.Topauthor{
+    font-weight: 700;
+}
+.mainBottom{
+    color: whitesmoke;
+}
+.mainBottom >h1{
+    font-size: 110px !important; 
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    display:flex !important;
+    flex-direction:row !important;
+}
+.mainBottom >h3{
+    font-size: 24px !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+}
+.btn-primary{
+   background-color: rgb(216, 57, 18) !important;
+}
+.info >h3{
+    margin-bottom: 0px;
+}
+.info >h1{
+    color:black !important;
+}
+.card >h3 {
+    background-color: rgb(236, 26, 26,) !important;
+    color:black !important
+}
+.card-header{
+    color: black;
+}

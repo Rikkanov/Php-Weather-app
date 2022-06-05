@@ -20,3 +20,4 @@
            //  document.querySelector("h1").innerText;
             setTimeout(zegarek, 1000);         
         }        
+ 

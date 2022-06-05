@@ -23,7 +23,7 @@
         <div class="card" style="width: 25rem;">
             <div class="card-header"><h2>Karta Pogodowa Miasta:</h2></div>
             <div class="card-header"><h1><?php echo $weatherDecode['name']?></h1></div>
-                <ul class="list-group list-group-flush">
+                <ul class="list-group list-group-flush ">
                     <li class="list-group-item"><h3><?php echo Tempconvert(round($temp))?></h3></li>
                     <li class="list-group-item"> <h3><?php echo $weatherDecode['main']['humidity']."&nbsp%"?></h3></li>
                     <li class="list-group-item"><h3><?php echo $weatherDecode['main']['pressure']."&nbsphPa"?></h3></li>
