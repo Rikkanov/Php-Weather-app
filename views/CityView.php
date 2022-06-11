@@ -2,10 +2,10 @@
         require_once "../partials/footer.php";
         require_once "../partials/header.php";
         require_once "../API/ShowWheater.php";
+        require_once "../API/5dayweather.php";
         require_once "../helpers/temp_conv.php";
         require_once "../database/pageinfo.php";
         require_once "../helpers/location.php";
-
 ?>
 <main class="Pagemain">
     <div class="MainInnerwrapper">
@@ -30,6 +30,10 @@
                     <li class="list-group-item"><h3><?php echo $weatherDecode['weather']['0']['description']."<img src='".$icon."'>"?></h3></li>
                 </ul>
             </div>
+    </div>
+    <div class="daily3h">
+        <h3><?php echo $weatherDecode2['list']['0']['main']['temp']?></h3>
+        <h3><?php echo $weatherDecode2['list']['0']['main']['humidity'] , "&nbsp%"?></h3>
     </div>
 <?php    
     }

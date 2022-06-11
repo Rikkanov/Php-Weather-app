@@ -1,0 +1,29 @@
+@media (min-width: 576px) {     
+    .MainInnerwrapper{
+    padding: 30px;
+
+} }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {     
+    .MainInnerwrapper{
+    padding: 40px;
+
+} 
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {     
+    .MainInnerwrapper{
+    padding: 50px;
+
+}  
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .MainInnerwrapper{
+    padding: 60px;
+
+} 
+}

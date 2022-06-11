@@ -14,8 +14,12 @@
         </div>
         <div class="mainBottom">
            <div id="day"></div> it's Currently
-           <div id="zegar"></div> 
-            <h3><?php echo getLocation(); ?></h3>
+           <div id="zegar"></div>
+           <div class="location">
+                <div id="city"></div>
+                <div id="country"></div>
+            </div>
+          <h3><?php echo getLocation(); ?></h3>
         <form action="CityView.php" method="GET">
                 <input type="text" name="city">
                 <input class="btn btn-primary btn-sm" value="Search city" type="submit" name="citySubmit">

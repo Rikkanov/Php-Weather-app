@@ -1,3 +1,27 @@
+@media (min-width: 576px) {
+  .MainInnerwrapper {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .MainInnerwrapper {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .MainInnerwrapper {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .MainInnerwrapper {
+    padding: 60px;
+  }
+}
+
 #day {
   font-size: 30px !important;
 }
@@ -11,7 +35,7 @@
 }
 
 #zegar > h1 {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 #zegar > h1 > span {
@@ -111,12 +135,21 @@ p {
   color: black !important;
 }
 
-.card > h3 {
-  background-color: #ec1a1a !important;
+.card > .list-group {
+  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0) !important;
   color: black !important;
 }
 
 .card-header {
   color: black;
+}
+
+.card-header > h2 {
+  color: black;
+}
+
+h2 {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 <?php
-const KEY = "d17f52b2b9b183fce0ca85b4472b7adb";
-$url = "https://api.openweathermap.org/data/2.5/weather?q=" . $_GET['city'] . "&appid=" . KEY;
+const KEY1 = "d17f52b2b9b183fce0ca85b4472b7adb";
+$url = "https://api.openweathermap.org/data/2.5/weather?q=" . $_GET['city'] . "&appid=" . KEY1;
 
 if(@file_get_contents($url)) {
 
@@ -14,3 +14,6 @@ if(@file_get_contents($url)) {
  else {
      $error = "City doesn't exists";
  }
+
+ 
+ ?>

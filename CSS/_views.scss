@@ -48,10 +48,17 @@
 .info >h1{
     color:black !important;
 }
-.card >h3 {
-    background-color: rgb(236, 26, 26,) !important;
+.card >.list-group {
+    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0) !important;
     color:black !important
 }
 .card-header{
     color: black;
+}
+.card-header >h2{
+    color: black;
+}
+h2{
+    color: white;
 }
